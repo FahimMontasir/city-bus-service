@@ -8,7 +8,7 @@ getCalculationOfTickets('plus-btn-economy', 'input-value-economy', true)
 getCalculationOfTickets('minus-btn-economy', 'input-value-economy', false)
 
 
-//calculation of tickets it's a main function
+//calculation of tickets and it's a main function
 function getCalculationOfTickets(button, input, isIncrease) {
     document.getElementById(button).addEventListener("click", function () {
         const inputValueNumber = getInputNumber(input);
