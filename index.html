@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <!--Header and Menu Section-->
     <header class="container">
         <nav>
@@ -27,12 +28,13 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="booking-section" class="main-content container">
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
                 scrambled it to make a type specimen book.</p>
         </div>
 
@@ -66,11 +68,11 @@
                     <div>
                         <label for="">First Class ($150)</label>
                         <!-- change the value for first class ticket -->
-                        <input id="input-value-first" class="inp-style inp-width" value="0" disabled>
+                        <input id="input-value-firstClass" class="inp-style inp-width" value="0" disabled>
                     </div>
                     <div class="plus-minus-btn">
-                        <button id="plus-btn-first">+</button>
-                        <button id="minus-btn-first">-</button>
+                        <button id="plus-btn-firstClass">+</button>
+                        <button id="minus-btn-firstClass">-</button>
                     </div>
                 </div>
                 <div class="input-group f-class">
@@ -102,7 +104,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <!-- tax  -->
+                        <!-- vat  -->
                         <p>$<span id="vat">00</span></p>
                     </div>
                 </div>
@@ -112,14 +114,23 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <!-- have to add subtotal plus tax -->
+                        <!-- have to add subtotal plus vat -->
                         <p>$<span id="total">000</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now" class="btn-style">Book Now</button>
         </div>
     </main>
+
+    <section>
+        <div id="afterPurchase" class="purchase-successful">
+            <h1>Your purchase is successful!</h1>
+            <p>You bought <span id="first-class-afterPurchase">00</span> first class tickets</p>
+            <p>and <span id="economy-class-afterPurchase">00</span> economy class tickets.</p>
+            <p>You paid total $<span id="total-afterPurchase">00</span></p>
+        </div>
+    </section>
 
     <!--Thank You-->
     <script src="main.js"></script>

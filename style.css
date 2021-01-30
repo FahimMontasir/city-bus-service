@@ -132,7 +132,7 @@ a.active {
 .btn-style {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     color: #fff;
@@ -154,4 +154,17 @@ button {
     color: white;
     border-radius: 3px;
     box-shadow: 3px 4px 10px lightgray;
+}
+
+.purchase-successful {
+    display: none;
+    height: 175px;
+    width: 400px;
+    background-color: #93ee7c;
+    margin-top: 250px;
+    margin-left: 35%;
+    padding: 40px;
+    line-height: 25px;
+    box-shadow: 10px 10px 50px #93ee7c;
+    border-radius: 10px;
 }
